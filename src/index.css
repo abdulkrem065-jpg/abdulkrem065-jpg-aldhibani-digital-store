@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;650;800;900&family=JetBrains+Mono:wght@400;505;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* GPU Hardware Acceleration for elements under high scrolling density */
+.will-change-gpu {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Reduce layout/paint recalculations */
+.contain-content {
+  contain: content;
+}
+
+.contain-strict {
+  contain: strict;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Custom scrollbar hides */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 📋 HIGH-PREPARATION THERMAL/A4 INVOICE PRINT MEDIA STATEMENTS */
+@media print {
+  /* Completely deactivate screen components */
+  body * {
+    visibility: hidden !important;
+  }
+  
+  /* Turn on the target printable document workspace selectively */
+  #printable-order-invoice-area,
+  #printable-order-invoice-area * {
+    visibility: visible !important;
+  }
+  
+  /* Reset the invoice wrapper for accurate thermal/sheet output */
+  #printable-order-invoice-area {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 15px !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    font-size: 11px !important;
+    font-family: system-ui, -apple-system, sans-serif !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Neutralize all web shadows, neon glows, and dark canvas elements */
+  #printable-order-invoice-area * {
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Force solid black ink headings in Arabic and English */
+  #printable-order-invoice-area h1,
+  #printable-order-invoice-area h2,
+  #printable-order-invoice-area h3,
+  #printable-order-invoice-area h4,
+  #printable-order-invoice-area p,
+  #printable-order-invoice-area span,
+  #printable-order-invoice-area div,
+  #printable-order-invoice-area td,
+  #printable-order-invoice-area th {
+    color: #000000 !important;
+  }
+
+  /* Solid line borders for lists */
+  .print-border-dash {
+    border-style: dashed !important;
+    border-color: #000000 !important;
+    border-width: 1.5px 0 0 0 !important;
+  }
+
+  /* Page margins adjustments */
+  @page {
+    margin: 0.6cm;
+  }
+}

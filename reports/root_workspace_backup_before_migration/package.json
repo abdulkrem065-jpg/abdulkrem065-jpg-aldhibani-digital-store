@@ -1,0 +1,13 @@
+{
+  "name": "qaroni-sovereign",
+  "version": "1.0.0",
+  "description": "Qaroni Sovereign Commit Gate",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Sovereign Gate: Build successful'",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "sqlite3": "^6.0.1"
+  }
+}
