@@ -253,7 +253,7 @@ export class SupabaseServerlessDB {
       if (error) {
         console.error(`❌ [Supabase AsyncUpsert Error] Write failed for table '${table}':`);
         if (table === 'products') {
-          console.error('SUPABASE PRODUCTS ERROR', JSON.stringify(error, null, 2));
+          console.warn('Supabase Products Warn', JSON.stringify(error, null, 2));
         } else {
           console.error(`  Code:`, error.code);
           console.error(`  Message:`, error.message);
@@ -266,7 +266,7 @@ export class SupabaseServerlessDB {
     } catch (err: any) {
       console.error(`❌ [Supabase AsyncUpsert Exception] Panic occurred for table '${table}':`, err);
       if (table === 'products') {
-        console.error('SUPABASE PRODUCTS ERROR', JSON.stringify(err, null, 2));
+        console.warn('Supabase Products Warn', JSON.stringify(err, null, 2));
       }
     }
   }
@@ -311,7 +311,7 @@ export class SupabaseServerlessDB {
       ]);
 
       if (productsRes.error) {
-        console.error('SUPABASE PRODUCTS ERROR', JSON.stringify(productsRes.error, null, 2));
+        console.warn('Supabase Products Warn', JSON.stringify(productsRes.error, null, 2));
       }
 
       const configData = configRes.data;
@@ -350,7 +350,7 @@ export class SupabaseServerlessDB {
       return true;
     } catch (err) {
       console.warn('[Sync Status] Soft skipped optional initial Supabase master table fetch:', err);
-      console.error('SUPABASE PRODUCTS ERROR', JSON.stringify(err, null, 2));
+      console.warn('Supabase Products Warn', JSON.stringify(err, null, 2));
       return false;
     }
   }
