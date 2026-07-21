@@ -10,8 +10,8 @@ This directory contains the Architectural Decision Records (ADR) for the project
 ## Active Architectural Standards
 
 - [Architecture V5 Master Constitution (الدستور الأعلى للنظام)](../CONSTITUTION.md)
-- [ADR 0001: V5 Execution Roadmap and Governance Doctrine](0001-v5-execution-roadmap.md)
-- [ADR 0002: Managing the RBAC system outside RLS in the Backend Layer](ADR-002-RBAC-Outside-Database.md)
+- [ADR 0001: V5 Execution Roadmap and Governance Doctrine](../../docs/architecture/adr/0001-v5-execution-roadmap.md)
+- [ADR 0002: Managing the RBAC system outside RLS in the Backend Layer](../../docs/architecture/adr/ADR-002-RBAC-Outside-Database.md)
 - [System Registry (سجل المعايير والترقيم)](../SystemRegistry.md)
 - [Execution Log (سجل تنفيذ معايير الـ V5)](../ExecutionLog.md)
 - [Rollback & Recovery Guide (دليل خطط التراجع وحماية البيانات)](../Rollback.md)

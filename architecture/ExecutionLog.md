@@ -21,8 +21,8 @@
 * **الوثائق المرجعية المنتجة:**
   - `CONSTITUTION.md` (الدستور الأعلى للنظام V5)
   - `SystemRegistry.md` (سجل المعايير والترقيم القياسي الفيدرالي لـ V5)
-  - `ADR/0001-v5-execution-roadmap.md` (خارطة الطريق التنفيذية وعقيدة الحوكمة)
-  - `ADR/ADR-002-RBAC-Outside-Database.md` (إدارة نظام الـ RBAC خارج الـ RLS في الباكيند)
+  - `docs/architecture/adr/0001-v5-execution-roadmap.md` (خارطة الطريق التنفيذية وعقيدة الحوكمة)
+  - `docs/architecture/adr/ADR-002-RBAC-Outside-Database.md` (إدارة نظام الـ RBAC خارج الـ RLS في الباكيند)
   - `compliance/ArchitectureCompliance.md` (نظام فحص الامتثال للدستور الأعلى)
   - `compliance/ArchitectureCompliance.sql` (مفسر ومحرك فحص الامتثال)
 * **وثيقة التراجع:** لا يوجد تراجع هندسي مطلوب (تأمين وتثبيت الهياكل الفكرية والتوثيقية فقط).

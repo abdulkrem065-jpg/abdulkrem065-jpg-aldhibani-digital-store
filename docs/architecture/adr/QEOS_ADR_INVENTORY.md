@@ -1,0 +1,133 @@
+# QEOS ADR INVENTORY
+
+## ADR-001 (Roadmap / V5 Execution)
+---
+- **اسم الملف:** 0001-v5-execution-roadmap.md
+---
+- **المسار الحالي:** /app/applet/architecture/ADR/0001-v5-execution-roadmap.md
+---
+- **الحالة:** Active
+---
+- **المرجعية:** Accepted
+---
+- **المجال:** Architecture, Workflow, Execution Roadmap
+---
+- **الوثائق التي يعتمد عليها:** Constitution
+---
+- **الوثائق التي تشير إليه:** /app/applet/architecture/ADR/README.md
+---
+- **هل يوجد تكرار:** NO
+---
+- **هل يحتاج دمجاً مستقبلياً:** YES
+---
+- **ملاحظات هندسية:** يتقاطع مع ADR-002 في سياسات RBAC، يحتاج إلى دمج وتطبيع كخارطة طريق دستورية أو ADR موحد.
+
+## ADR-002
+---
+- **اسم الملف:** ADR-002-RBAC-Outside-Database.md
+---
+- **المسار الحالي:** /app/applet/architecture/ADR/ADR-002-RBAC-Outside-Database.md
+---
+- **الحالة:** Active
+---
+- **المرجعية:** Approved
+---
+- **المجال:** RBAC, Security, Middleware
+---
+- **الوثائق التي يعتمد عليها:** غير محدد بشكل صريح (يعتمد ضمنياً على معمارية V5)
+---
+- **الوثائق التي تشير إليه:** /app/applet/architecture/ADR/README.md
+---
+- **هل يوجد تكرار:** NO
+---
+- **هل يحتاج دمجاً مستقبلياً:** YES
+---
+- **ملاحظات هندسية:** يكمل ADR-0001 ويحدد أن صلاحيات الموظفين تدار في Middleware. يجب دمجهما لتجنب التشتت حول سياسة RBAC.
+
+## ADR-README-1
+---
+- **اسم الملف:** README.md
+---
+- **المسار الحالي:** /app/applet/architecture/ADR/README.md
+---
+- **الحالة:** Duplicate
+---
+- **المرجعية:** Draft
+---
+- **المجال:** Index, Documentation
+---
+- **الوثائق التي يعتمد عليها:** N/A
+---
+- **الوثائق التي تشير إليه:** N/A
+---
+- **هل يوجد تكرار:** YES
+---
+- **هل يحتاج دمجاً مستقبلياً:** YES
+---
+- **ملاحظات هندسية:** فهرس يحتوي على روابط للقرارات النشطة في مجلد خاطئ.
+
+## ADR-README-2
+---
+- **اسم الملف:** README.md
+---
+- **المسار الحالي:** /app/applet/architecture/adr/README.md
+---
+- **الحالة:** Duplicate
+---
+- **المرجعية:** Draft
+---
+- **المجال:** Index, Documentation
+---
+- **الوثائق التي يعتمد عليها:** N/A
+---
+- **الوثائق التي تشير إليه:** N/A
+---
+- **هل يوجد تكرار:** YES
+---
+- **هل يحتاج دمجاً مستقبلياً:** YES
+---
+- **ملاحظات هندسية:** فهرس قالب يشرح كيفية كتابة ADR، موجود في مسار مكرر.
+
+## ADR-README-3
+---
+- **اسم الملف:** README.md
+---
+- **المسار الحالي:** /app/applet/app/applet/docs/architecture/adr/README.md
+---
+- **الحالة:** Placeholder
+---
+- **المرجعية:** Draft
+---
+- **المجال:** Index, Documentation
+---
+- **الوثائق التي يعتمد عليها:** QEOS_CONSTITUTION.md, QEOS_DEVELOPMENT_CONSTITUTION.md
+---
+- **الوثائق التي تشير إليه:** N/A
+---
+- **هل يوجد تكرار:** YES
+---
+- **هل يحتاج دمجاً مستقبلياً:** YES
+---
+- **ملاحظات هندسية:** الفهرس الموجود في المسار الداخلي المتداخل، يحتوي على توجيهات حديثة لقوالب ADR.
+
+## ADR-PLACEHOLDER
+---
+- **اسم الملف:** Placeholder.md
+---
+- **المسار الحالي:** /app/applet/qaroni-os/adr/Placeholder.md
+---
+- **الحالة:** Legacy
+---
+- **المرجعية:** Archived
+---
+- **المجال:** Index, Legacy Architecture
+---
+- **الوثائق التي يعتمد عليها:** QOC Article IV
+---
+- **الوثائق التي تشير إليه:** N/A
+---
+- **هل يوجد تكرار:** NO
+---
+- **هل يحتاج دمجاً مستقبلياً:** YES
+---
+- **ملاحظات هندسية:** ملف تتبعي قديم يذكر ADR-001 و ADR-002 و ADR-003 بنظام Qaroni OS القديم.

@@ -52,7 +52,7 @@
 3.  نقل المجموعة الثانية: `mv architecture/constitution/* docs/archive/legacy/architecture/constitution/`
 4.  نقل المجموعة الثالثة: `mv qaroni-engine/constitution/* docs/archive/legacy/qaroni-engine/constitution/`
 5.  نقل المجموعة الرابعة: `mv reports/* docs/archive/legacy/reports/` ونقل التقارير القديمة من مساراتها.
-6.  إصدار تقرير التحقق: `QEOS_MIGRATION_WAVE_1_REPORT.md` وفقاً لـ `QEOS_MIGRATION_VERIFICATION_PROTOCOL.md`.
+6.  إصدار تقرير التحقق: `QEOS_WAVE1_EXECUTION_REPORT.md` وفقاً لـ `QEOS_MIGRATION_VERIFICATION_PROTOCOL.md`.
 
 ---
 
